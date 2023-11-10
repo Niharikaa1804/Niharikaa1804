@@ -1,0 +1,75 @@
+#include <iostream>
+#include<string.h>
+#include <iomanip>
+#include <cstdlib>
+using namespace std;
+int main() 
+{
+  long long MOBILENUMBER;
+  string NAME,CITY;
+cout<<"                   WELCOME TO PICKURTICKET"<<endl;
+  cout<<"\n";
+cout<<"  PLEASE ENTER USER INFORMATION"<<endl; 
+  cout<<"\n";
+  cout<<"NAME:\n";
+  cin>>NAME;
+  cout<<"MOBILE NUMBER:\n";
+  cin>>MOBILENUMBER;
+  cin.ignore();
+  cout<<"CITY:\n";
+  cin>>CITY;
+  cout<<"                  MOVIES CURRENTLY RUNNING"<<endl;
+  int MOVIES;
+  cout<<"1. The Matrix"<<endl;
+  cout<<"2. Eternal Echoes"<<endl;
+  cout<<"3. Lunar Legacy"<<endl;
+  cout<<"4. Mystic Mosaic"<<endl;
+  cout << "Enter your choice (1-4): ";
+  cin >> MOVIES;
+  switch (MOVIES) {
+    case 1:
+      cout<<"The Matrix";
+      break;
+    case 2:
+      cout<<"Eternal Echoes";
+      break;
+    case 3:
+      cout<<"Lunar Legacy";
+      break;
+    case 4:
+      cout<<"Mystic Mosaic";
+      break;
+    default:
+     cout<<"Invalid Input";
+      break;
+  }
+  cout<<endl;
+  cout<<"                 THEATERS NEAR YOU"<<endl;
+  int NAME_OF_THE_THEATER;
+    cout << "Choose a theater:\n";
+    cout << "1. ABC COMPLEX \n";
+    cout << "2. PVR CINEMA \n";
+    cout << "3. AGS CINIMA \n";
+    cout << "4. INOX \n";
+    cout << "Enter your choice (1-4): ";
+    cin >> NAME_OF_THE_THEATER;
+    switch (NAME_OF_THE_THEATER) {
+      case 1:
+        cout<<"ABC COMPLEX";
+        break;
+      case 2:
+        cout<<"PVR CINEMA";
+        break;
+      case 3:
+        cout<<"AGS CINEMA";
+        break;
+      case 4:
+        cout<<"INOX";
+        break;
+      default:
+       cout<<"Invalid Input";
+        break;
+      
+      
+    }
+} 
